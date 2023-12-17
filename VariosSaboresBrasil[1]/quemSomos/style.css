@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Russo+One&family=Sarala&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans&family=Roboto:wght@400;900&family=Russo+One&family=Sarala&family=VT323&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header{
+    align-items:center ;
+    display: flex;
+    flex-direction: row ;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo{
+    width:55px;
+    height: auto;
+}
+
+.menu-item{
+    color: black;
+    padding: 24px;
+}
+
+.menu-item:hover{
+    color: #5f3c4f;
+    transition: 0.5s; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.title-history h1{
+    color: black;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 60px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.title-history h2{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 50px;
+}
+
+.history-card {
+    background-color: #4b3b44;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.history-card img {
+    display: grid;
+    margin: 10px;
+    width: 80%;
+    max-height: 95%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: 95%;
+}
+
+.history-card-text h1 {
+    margin-top: 0;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+}
+
+.history-card-text p {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover{
+    transform: scale(0.9);
+    transition: filter 0.3s ease-in-out;
+    filter: brightness(60%);
+}
+
+.button{
+    background-color: #972a66 ;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    padding: 18px;
+    width: 110px;
+}
+
+.button:hover{
+    background-color: #5f3c4f;
+    transition: 1s;
+}
+
+.background{
+    align-items: center; 
+    background: no-repeat url(../img/quem\ somos.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+ }
+ 
+ .background h1{
+     color: white;
+     font-family: 'Berkshire Swash', cursive;
+     font-size: 80px;
+     padding-top: 20px;
+     text-align: center;
+ }
+ 
+.img-quemSomos{
+    margin: 50px;
+    padding: 10px;
+ }
+
+.quem-somos{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.text-quemSomos h2, p{
+    padding: 20px;
+}
+
+.social-media{
+    align-items:center ;
+    background-color: #292827;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    padding: 5px;   
+}
+
+.rodape{
+    background-color: #292827;
+    color: #ffffff;
+    font-family: 'Josefin Sans';
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsividade */
+ 
+@media screen and (max-width:768px) {
+
+    .header{
+        flex-direction: column;
+        font-size: 22px;
+    }
+
+    .quem-somos h1,p{
+        font-size: 26px;
+    }
+
+      } 

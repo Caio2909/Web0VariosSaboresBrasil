@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Russo+One&family=Sarala&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans&family=Roboto:wght@400;900&family=Russo+One&family=Sarala&family=VT323&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.header{         
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo{
+    width:55px;
+    height: auto;
+}
+
+.menu-item{ /*estilo dos itens do menu*/
+    color: black;
+    padding: 24px;
+}
+
+.menu-item:hover{
+    color: #5f3c4f;
+    transition: 0.5s;
+}
+
+a{  /*estilo dos links*/
+    text-decoration: none;
+    color: white;
+}
+
+.button{  /*estilo do botão*/
+    background-color: #972a66;
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    padding: 18px;
+    width: 110px;
+}
+
+.button:hover{
+    background-color: #5f3c4f;
+    color:rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.background-sabores{
+    align-items: center;
+    background: no-repeat url(images/plano-de-fundo.jpg); /*Colocar o path da imagem de fundo para essa classe*/
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.background-sabores h1{
+    color: white;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 80px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.background-sabores h2{
+    color: #5f3c4f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.background-sabores h3{
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.background-sheets{
+    background: no-repeat url(images/folha-fundo-02.jpg); /*Segunda imagem de fundo*/
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px;
+}
+
+.text-welcome{
+    grid-column: 1 / 1;
+    height: 100vh;
+    padding-top: 20vh;
+}
+
+
+.text-welcome p{
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 30px;
+    text-align: center;
+}
+
+.text-welcome h1 {
+    border-top: 2px solid #c663004b;
+    color: #5f3c4f;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.img{
+    background: no-repeat center url(images/acai.jpg); /*imagem de um alimento principal do norte*/
+    background-size: 60vh;
+    height: 100vh;
+   
+}
+
+.schedule-text{
+    background: no-repeat center url(images/acai.jpg); /*nessa parte, pode ser uma imagem meio que relaxante(??)*/
+    background-size: 60vh;
+    height: 100vh;
+   
+}
+
+.schedule-text h1{
+    color: #ffffff;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    padding-top: 40vh;
+    text-align: center;
+}
+
+.schedule-text p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family:'Josefin Sans', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-text-menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.container-text-menu h1{
+    color: #5f3c4f;
+    font-family: 'Berkshire', cursive;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.container-text-menu h2{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 50px;
+}
+
+.menu h2{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menu h3{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.top-row,
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.Item1, .Item2, .Item3, .Item4, .Item5, .Item6 {
+    flex: 1;
+    max-width: calc(33.33% - 10px); /* Para 3 itens em cada linha, descontando a margem */
+}
+
+.img1, .img2, .img3, .img4{
+    padding: 0px;
+    width: 20em;
+    border-radius: 60px;
+    transition: transform 1.0s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover{
+    transform: scale(0.9);
+    transition: filter 0.3s ease-in-out;
+    filter: brightness(60%);
+}
+
+.value{
+    color: #5f3c4f;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.button-menu-completo{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.button-menu{
+    background-color: #972a66;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 18px;
+    width: 12em;
+}
+
+.button-menu:hover{
+    background-color: #492d3d;
+    transition: 1s;
+}
+
+
+.button-noticias{
+    display: flex;
+    justify-content: center;
+    padding-block-end: 80px;
+}
+
+.button-noticiasText{
+    background-color: #972a66;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    padding: 18px;
+    width: 12em;
+}
+
+.button-noticiasText:hover{
+    background-color: #5f3c4f;
+    transition: 1s;
+}
+
+.container-text-promocao{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.img-text-promocao{
+    width: 10vw;
+}
+
+.container-text-promocao h1{
+    color: #5f3c4f;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container-text-promocao p{
+    color: #5f3c4f;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.promocao{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 100px;
+
+}
+
+.promocao h3{
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+.location{
+    background: no-repeat url(); /*outra imagem de fundo, no geral vamos escolher duas padrões*/
+
+}
+
+.text-maps{
+    color: #5f3c4f;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.banner{
+    background-image: url(); /*Um Plano de Fundo*/
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+    padding: 150px;
+
+}
+
+.banner h2{
+    color: #f5efe6;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.banner h3{
+    color: #f5efe6;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.social-media{
+    align-items: center;
+    background-color: #292827;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    padding: 5px;   
+}
+
+.icon{
+    color: white;
+    padding: 10px;
+}
+
+.icon:hover{
+    transform: scale(1.6);
+    transition: 0.5s; 
+}
+
+.rodape{
+    color: #ffffff;
+    background-color: #292827;
+    font-family: 'Josefin Sans';
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+    .header{
+        flex-direction: column;
+        font-size: 22px;
+    }
+        
+    .background-sheets{
+        background-size: 100vh;
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+    
+    .text-welcome p{
+        font-size: 24px; 
+    }
+    
+    .schedule-text h1{
+        font-size: 45px;
+    }
+    
+    .schedule-text p{   
+        font-size: 28px;
+    }
+    
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        padding: 15px;
+        width: 100vw;
+    }
+    
+    .container-text-menu h2{
+        font-size: 25px;
+    }
+    
+    .menu h3{
+        font-size: 18px;
+    }
+    
+    .value {
+        font-size: 22px;
+    }
+    
+    .button-menu{
+        font-size: 20px;
+    }
+    
+    .container-happyHour{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 15px;
+        width: 100vw;
+    }
+    
+    .statements{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+    }
+    
+    .location{
+        background-image:none;
+        padding-top: 60px;
+    }
+    
+    .banner{
+        background: no-repeat url();
+        block-size: 100vw;
+        font-family: 'Josefin Sans', sans-serif;
+        display: block;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .banner h2{
+        font-size: 45px;
+        font-weight: lighter;
+     }
+     
+     .banner h3{
+         font-size: 60px; 
+     }
+      } 
